@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Burger E-Commerce</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#shop">BURGERS</a></li>
+            <li><a href="#combo">COMBOS</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-image">
+
+        </div>
+
+    </header>
+
+            
+    
+    <section id="shop">
+        <h2>BURGERS</h2>
+    <div class="feature-container">
+        <div class="feature">
+            <img src="Cheeseburger isolated on white background_ stock photography.jpeg" alt="Image 1">
+            <i class="fas fa-cogs"></i> 
+            <h3>Cheeseburger</h3>
+            <p> cheeseburger, harmonizing savory beef, melted cheese, and fresh condiments, delivers an irresistibly satisfying taste in every bite.</p>
+            <p>Price: 230rs</p>
+            <button onclick="addToCart('Image 1', 230)">Add to Cart</button>
+        </div>
+        <div class="feature">
+            <img src="big fresh burger with cheese and bacon isolated on white background.jpeg" alt="Image 2">
+            <i class="fas fa-star"></i>
+            <h3>big fresh burger with cheese and bacon</h3>
+            <p>A generously crafted burger featuring a succulent patty, melted cheese, and crispy bacon—a tantalizing blend of flavors that defines culinary indulgence.</p>
+            <p>Price: 230rs</p>
+            <button onclick="addToCart('Image 2', 230)">Add to Cart</button>
+        </div>
+        <div class="feature">
+            <img src="Arby's Tavukburger Sandviç.jpeg" alt="Image 3">
+            <i class="fas fa-globe"></i>
+            <h3>Arby's Tavukburger Sandviç burger</h3>
+            <p>Arby's Tavukburger Sandviç is a delightful sandwich, showcasing flavorful chicken nestled between soft buns, creating a savory experience that satisfies the palate.</p>
+            <p>Price: 230rs</p>
+            <button onclick="addToCart('Image 3', 230)">Add to Cart</button>
+        </div>
+        <div class="feature">
+            <img src="Big hamburger on white background.jpeg" alt="Image 4">
+            <i class="fas fa-cogs"></i> 
+            <h3>Big hamburger </h3>
+            <p>The big hamburger is a culinary masterpiece, boasting a substantial beef patty, fresh veggies, and a soft bun—a symphony of flavors in every substantial bite.</p>
+            <p>Price: 230rs</p>
+            <button onclick="addToCart('Image 4', 230)">Add to Cart</button>
+        </div>
+        <div class="feature">
+            <img src="Your Favourite Burgers, Fries & More _ McDonald's Canada.jpeg" alt="Image 5">
+            <i class="fas fa-star"></i>
+            <h3> Single layer</h3>
+            <p>A single-layer hamburger is a simplified delight, featuring a solo beef patty, ensuring a straightforward yet satisfying experience with each mouthwatering bite.</p>
+            <p>Price: 230rs</p>
+            <button onclick="addToCart('Image 5', 230)">Add to Cart</button>
+        </div>
+        <div class="feature">
+            <img src="Luxury fashion & independent designers _ SSENSE.jpeg" alt="Image 6">
+            <i class="fas fa-globe"></i>
+            <h3>Triple layer</h3>
+            <p>The triple-layer hamburger is a towering feast, featuring three succulent beef patties sandwiched between layers of fresh ingredients—an indulgent delight for burger enthusiasts.</p>
+            <p>Price: 230rs</p>
+            <button onclick="addToCart('Image 6', 230)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+<section id="combo">
+    <h2>COMBOS!!!!!</h2>
+    <div class="combo-container">
+        <div class="combo-item">
+            <img src="Hamburger PNG Picture, Hamburg Packages, Fast Food Clipart, Hamburgers, Coke PNG Image For Free Download.jpeg" alt="Item 1">
+            <h3></h3>
+            <p>Description for Item 1.</p>
+            <p>Price: 230rs</p>
+            <button onclick="addToCart('Item 1', 230)">Add to Cart</button>
+        </div>
+        <div class="combo-item">
+            <img src="HD wallpaper_ burger 4k desktop best, sandwich, bread, tomato, food and drink.jpeg" alt="Item 2">
+            <h3>Item 2</h3>
+            <p>Description for Item 2.</p>
+            <p>Price: 230rs</p>
+            <button onclick="addToCart('Item 2', 230)">Add to Cart</button>
+        </div>
+        <div class="combo-item">
+            <img src="4 Ways Tablet POS Systems Increase Sales in Fast Food Restaurants.jpeg" alt="Item 3">
+            <h3>Item 3</h3>
+            <p>Description for Item 3.</p>
+            <p>Price: 380rs</p>
+            <button onclick="addToCart('Item 3', 380)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+        <p>Email: burger@example.com</p>
+        <p>Mobile: +91 1234567891</p>
+        <p>Instagram: @burger_123</p>
+    
+</section>
+    <div id="cart" class="cart hidden">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: <span id="total">0.00</span></p>
+    </div>
+    
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <div class="email-form">
+            <label for="email">Subscribe to our page:</label>
+            <input type="email" id="email" class="email-input" placeholder="Your email">
+            <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+        </div>
+    </footer>
+    
+</body>
+</html>
